@@ -74,6 +74,7 @@ function startOver(){
   userClickedPattern = [];
   gamepattern = [];
   started = false;
+  $(document).unbind("keypress"); // Unbind the keypress event before adding a new one to avoid duplication
   start();
 }
 
